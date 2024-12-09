@@ -1,3 +1,5 @@
+# <h3>Please be aware this is currently non-functional but if anyone is interested in jumping in, feel free to clone it and see what you can do! Thanks! </h3>
+
 # fourdash Plugin
 
 A WordPress plugin for managing appointments and schedules.
