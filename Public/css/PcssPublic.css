@@ -1,0 +1,30 @@
+.4dash-booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+.4dash-booking-form input,
+.4dash-booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.4dash-booking-form button {
+    background-color: #0073aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.4dash-booking-form button:hover {
+    background-color: #005177;
+}
+#4dash-calendar {
+    max-width: 900px;
+    margin: 20px auto;
+}

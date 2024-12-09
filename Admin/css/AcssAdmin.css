@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #f5f7fa;
+  --text-color: #34495e;
+  --sidebar-color: #2c3e50;
+  --event-color-1: #ff9ff3;
+  --event-color-2: #feca57;
+  --event-color-3: #48dbfb;
+  --event-color-4: #ff6b6b;
+}
+
+body.fourdash-admin {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.fourdash-container {
+  display: flex;
+  height: 100vh;
+}
+
+.fourdash-sidebar {
+  width: 200px;
+  background-color: var(--sidebar-color);
+  color: white;
+  padding: 20px;
+}
+
+.fourdash-sidebar .menu-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fourdash-sidebar .menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.fourdash-main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.fourdash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.fourdash-header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.fourdash-header .user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.fourdash-header .user-menu .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.fourdash-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.fourdash-calendar .day {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  min-height: 100px;
+}
+
+.fourdash-calendar .event {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: white;
+}
+
+.fourdash-calendar .event-1 { background-color: var(--event-color-1); }
+.fourdash-calendar .event-2 { background-color: var(--event-color-2); }
+.fourdash-calendar .event-3 { background-color: var(--event-color-3); }
+.fourdash-calendar .event-4 { background-color: var(--event-color-4); }
+
+.fourdash-mobile-view {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .fourdash-container {
+    flex-direction: column;
+  }
+  
+  .fourdash-sidebar {
+    width: 100%;
+    height: auto;
+  }
+  
+  .fourdash-calendar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .fourdash-mobile-view {
+    display: block;
+  }
+}
